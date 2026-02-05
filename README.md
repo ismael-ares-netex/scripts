@@ -9,4 +9,4 @@ Instala o actualiza Docker Compose a la versión **v2.38.2** en el directorio `~
 
 **Comando:**
 ```bash
-curl -s [https://raw.githubusercontent.com/ismael-ares-netex/scripts/main/update-docker-compose.sh](https://raw.githubusercontent.com/ismael-ares-netex/scripts/main/update-docker-compose.sh) | bash
+curl -s https://raw.githubusercontent.com/ismael-ares-netex/scripts/main/update-docker-compose.sh | bash
