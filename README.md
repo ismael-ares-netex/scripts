@@ -1,6 +1,6 @@
 # 🚀 Scripts de Automatización
 
-Colección de scripts personales para hacerme la vida mas fácil.
+Colección de scripts personales para facilitarme la vida.
 
 ## 🛠 Scripts disponibles
 
