@@ -12,7 +12,6 @@ if ! grep -q "$BIN_DIR" ~/.bashrc; then
     echo "export PATH=\"$BIN_DIR:\$PATH\"" >> ~/.bashrc || { echo "ERROR: No se pudo escribir en .bashrc"; exit 1; }
 fi
 
-echo "Descargando desde GitHub..."
 curl -fSL "https://github.com/docker/compose/releases/download/${VERSION}/docker-compose-$(uname -s)-$(uname -m)" -o "$BIN_DIR/docker-compose" || { 
     echo "ERROR: Falló la descarga. Verifica tu conexión o la versión '$VERSION'."
     exit 1 
@@ -25,7 +24,6 @@ export PATH="$BIN_DIR:$PATH"
 INSTALLED_VERSION=$(docker-compose --version 2>/dev/null)
 if [[ "$INSTALLED_VERSION" == *"$VERSION"* ]]; then
     echo "✅ Verificación exitosa: Docker Compose $VERSION instalado correctamente."
-    echo "Paso final: Ejecuta 'source ~/.bashrc' en tu terminal para empezar a usarlo."
 else
     echo "❌ ERROR: La versión detectada ($INSTALLED_VERSION) no coincide con la esperada ($VERSION)."
     exit 1
