@@ -1,6 +1,6 @@
 # 🚀 Scripts de Automatización
 
-Colección de scripts para configuración rápida de entornos.
+Colección de scripts personales para facilitarme la vida.
 
 ## 🛠 Scripts disponibles
 
