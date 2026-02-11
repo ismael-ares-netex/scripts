@@ -12,7 +12,7 @@ Instala o actualiza Docker Compose a la versión **v2.38.2** en el directorio `~
 curl -s https://raw.githubusercontent.com/ismael-ares-netex/scripts/main/update-docker-compose.sh | bash
 ```
 ### 2. Actualizar Helium Browser
-Instala o actualiza el navegador **Helium** descargando la última AppImage en `~/Documentos/` y creando un enlace simbólico en `~/.bin/`. (Añadir en un futuro la conf automatica de .desktop)
+Instala o actualiza el navegador **Helium** descargando la última AppImage en `~/Documentos/` y creando un enlace simbólico en `~/.bin/`. ERROR: Crea carpeta ~ en el directorio donde se ejecuta. (Añadir en un futuro la conf automatica de .desktop)
 
 **Comando:**
 ```bash
