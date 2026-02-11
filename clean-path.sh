@@ -40,7 +40,7 @@ done
 echo -e "\n"
 
 echo -n "ACTION REQUIRED: Press [ENTER] to confirm deletion or [Ctrl+C] to abort: "
-read -r
+read -r < /dev/tty
 
 rm -rf "${ABS_PATH:?}"/* "${ABS_PATH:?}"/.[!.]* 2>/dev/null
 
