@@ -27,6 +27,11 @@ if [[ "$ABS_PATH" == "/" || "$ABS_PATH" == "$HOME" ]]; then
     exit 1
 fi
 
+if [ -z "$(ls -A "$ABS_PATH")" ]; then
+    echo "Information: Directory $ABS_PATH is already empty. Nothing to clean."
+    exit 0
+fi
+
 echo -e "\nPENDING DELETION: $ABS_PATH"
 echo "----------------------------------------------------"
 $LIST_CMD "$ABS_PATH"
