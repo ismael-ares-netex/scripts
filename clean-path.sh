@@ -27,7 +27,11 @@ if [[ "$ABS_PATH" == "/" || "$ABS_PATH" == "$HOME" ]]; then
     exit 1
 fi
 
-if [ -z "$(ls -A "$ABS_PATH")" ]; then
+shopt -s dotglob
+files=("$ABS_PATH"/*)
+shopt -u dotglob
+
+if [ "${#files[@]}" -eq 1 ] && [ ! -e "${files[0]}" ]; then
     echo "Information: Directory $ABS_PATH is already empty. Nothing to clean."
     exit 0
 fi
