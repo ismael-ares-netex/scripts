@@ -19,7 +19,7 @@ Instala o actualiza el navegador **Helium** descargando la última AppImage en `
 curl -s https://raw.githubusercontent.com/ismael-ares-netex/scripts/main/update-helium.sh | bash
 ```
 ### 3. Limpiar directorios
-Limpia cualquier path con la seguridad de ver que borras (requiere exa, aunque si no tienes exa proximamente hare que por defecto tire ls) y con una cuenta atrás de seguridad.
+Limpia cualquier path con la seguridad de ver que borras y con una cuenta atrás de seguridad. Compatible con ls, eza y exa
 
 **Comando:**
 ```bash
