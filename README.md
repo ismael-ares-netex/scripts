@@ -1,6 +1,6 @@
-# 🚀 Scripts de Automatización
+# 🚀 Scripts en Bash
 
-Colección de scripts personales para facilitarme la vida.
+Colección de scripts en bash para facilitarme la vida.
 
 ## 🛠 Scripts disponibles
 
